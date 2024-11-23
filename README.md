@@ -1,4 +1,4 @@
-# kettlewell_ben_hwk3
+# To-Do Lists 
 Multimedia Authoring Homework assignment. A site that contains 3 lists of items to do, items in progress, and items that are completed that can be checked off. This is the repository for this project.
 
 ## Installation
