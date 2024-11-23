@@ -1,9 +1,11 @@
+/* Set margins, padding, and border to 0 */
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* General page settings for text and background(covered by main's background for majority */
 body {
     color: white;
     font-size: 16px;
@@ -15,12 +17,14 @@ h1 {
     font-weight: bold;
 }
 
+/* Header styles */
 header {
     background-color: grey;
     padding: 25px;
     text-align: center;
 }
 
+/* Main styles to flex and wrap the lists in a center justification as well as adding main body background */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +45,7 @@ p {
     font-size: 25px;
 }
 
+/* Set dimensions and appearance of each list */
 section {
     width: 400px;
     margin: 10px;
@@ -52,6 +57,7 @@ section h2 {
     text-align: center;
 }
 
+/* Set colours of every list box and the odd elements inside them */
 #todo {
     border-color: #ff9500;
     background-color: #ff950050;
@@ -79,28 +85,29 @@ section h2 {
     background-color: #00960a;
 }
 
-#inprogress input[type=checkbox]:checked + span::after {
-    content: "\1f44d";
-    font-size: 20px;
-    margin: 0px;
-    margin-left: 20px;
-}
-
-#done input[type=checkbox]:checked + span::after {
-    content: "\1f451";
-    font-size: 20px;
-    margin: 0px;
-    margin-left: 20px;
-}
-
+/* Style for the content after the checkbox once the box is checked */
 input[type=checkbox]:checked + span {
     font-weight: bold;
 }
 
+/* Style for the content that comes after whatever is inside a span tag(these styles are put here rather than in the next
+styles to shorten the code a little by not repeating code */
 span::after {
+    font-size: 20px;
+    margin: 0px;
     margin-left: 10px;
 }
 
+/* Styles for what comes after the content in the span after the checkbox once the box is checked */
+#inprogress input[type=checkbox]:checked + span::after {
+    content: "\1f44d";
+}
+
+#done input[type=checkbox]:checked + span::after {
+    content: "\1f451";
+}
+
+/* Styles for unordered lists, their list elements, and for the last list elements of unordered lists */
 ul {
     list-style-type: none;
     padding: 0px;
